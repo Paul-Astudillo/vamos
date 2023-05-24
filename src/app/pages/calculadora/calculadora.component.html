@@ -1,0 +1,31 @@
+<p>{{nombre}}</p>
+<div class="container">
+    <input type="number" id="numero1" placeholder="Ingresa el primer número"  [(ngModel)]="a">
+    <input type="number" id="numero2" placeholder="Ingresa el segundo número" [(ngModel)]="b">
+</div>
+
+
+Valor de A={{a}}
+<br>
+Valor de B={{b}}
+<hr>
+
+<button (click)="resultados()">Calcular</button>
+
+<p>Resultados</p>
+
+Suma={{s}}
+<br>
+Resta={{r}}
+<br>
+Multiplicacion{{m}}
+<br>
+Division={{d}}
+
+<hr>
+<hr>
+<ul>
+    <li *ngFor="let item of lista">{{item}}</li>
+</ul>
+
+<app-agregar (newItemEvent)="addItem($event)"></app-agregar>

@@ -1,0 +1,34 @@
+/* Estilos del menú de navegación */
+nav {
+    background-color: #333;
+    padding: 20px;
+}
+
+/* Estilos de la lista de menú */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilos de los elementos de menú */
+.menu li {
+    display: inline-block;
+}
+
+/* Estilos de los enlaces del menú */
+.menu li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos de los enlaces del menú al pasar el cursor */
+.menu li a:hover {
+    background-color: #ff6f00;
+}

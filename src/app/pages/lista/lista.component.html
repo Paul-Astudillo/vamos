@@ -1,0 +1,29 @@
+<div id="content">
+    <table>
+        <thead>
+            <tr>
+              <th>Estudiante</th>
+              <th>Edad</th>
+              <th>Actividad</th>
+
+              
+            </tr>
+          </thead>
+          <tbody>
+            <span *ngIf="listadoUsuarios.length == 0">
+                No existen contactos
+            </span>
+            <tr *ngFor="let usuarios of listadoUsuarios" >
+              <td>{{usuarios.nombre}}</td>
+              <td>{{usuarios.edad}}</td>
+              <td>  <a (click)="editar(usuarios)">Editar   </a> &nbsp; 
+                <a (click)="eliminar(usuarios)">Eliminar</a>
+            </tr>
+     
+
+          </tbody>
+    
+    
+    
+    </table>
+</div>
