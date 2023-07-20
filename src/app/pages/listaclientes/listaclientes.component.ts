@@ -9,7 +9,6 @@ import { Cliente } from 'src/domain/cliente';
   styleUrls: ['./listaclientes.component.scss']
 })
 export class ListaclientesComponent {
-
   listaClientes:any
 
   constructor(private clienteService: ClienteService, private router: Router){
@@ -47,5 +46,6 @@ export class ListaclientesComponent {
      }
    )
   }
+
 
 }

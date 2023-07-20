@@ -21,6 +21,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
 import { ListaclientesComponent } from './pages/listaclientes/listaclientes.component';
 import { CrearclienteComponent } from './pages/crearcliente/crearcliente.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { CrearclienteComponent } from './pages/crearcliente/crearcliente.compone
     MatButtonModule,
     NgIf,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
