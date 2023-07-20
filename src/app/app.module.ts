@@ -19,6 +19,8 @@ import {NgIf} from '@angular/common';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
+import { ListaclientesComponent } from './pages/listaclientes/listaclientes.component';
+import { CrearclienteComponent } from './pages/crearcliente/crearcliente.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { UsuarioComponent } from './pages/usuario/usuario.component';
     CalculadoraComponent,
     InicioComponent,
     AgregarComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    ListaclientesComponent,
+    CrearclienteComponent
   ],
   imports: [
     BrowserModule,
