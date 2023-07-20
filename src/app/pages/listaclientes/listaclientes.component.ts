@@ -15,6 +15,11 @@ export class ListaclientesComponent {
    this.listaClientes = this.clienteService.getAll()
   }
 
+  ngOnInit(){
+
+    this.listaClientes = this.clienteService.getAll()
+  }
+
 
   editar(cliente : Cliente){
       console.log("Editar cliente: "+cliente.cedula)

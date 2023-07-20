@@ -17,6 +17,9 @@ export class ListaComponent {
     this.listadoUsuarios = usuarioServices.getlist()
   }
 
+
+
+
   editar(usuario: Usuario){
 
 
