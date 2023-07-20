@@ -25,7 +25,7 @@ export class ListaclientesComponent {
        }
       }
 
-      this.router.navigate(['pages/clientForm'], params)
+      this.router.navigate(['pagina/crearcliente'], params)
   }
 
 
