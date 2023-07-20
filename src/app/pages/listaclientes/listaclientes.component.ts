@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavigationExtras, Route, Router } from '@angular/router';
 import { ClienteService } from 'src/app/services/cliente.service';
 import { Cliente } from 'src/domain/cliente';
@@ -8,7 +8,7 @@ import { Cliente } from 'src/domain/cliente';
   templateUrl: './listaclientes.component.html',
   styleUrls: ['./listaclientes.component.scss']
 })
-export class ListaclientesComponent {
+export class ListaclientesComponent implements OnInit{
   listaClientes:any
 
   constructor(private clienteService: ClienteService, private router: Router){
@@ -31,16 +31,20 @@ export class ListaclientesComponent {
       }
 
       this.router.navigate(['pagina/crearcliente'], params)
+     
   }
 
 
   eliminar(cliente : Cliente){
      console.log("eliminar cliente")
      this.clienteService.delete(cliente).subscribe(
-       () => console.log("cliente eliminado")
+       () => {console.log("cliente eliminado");
+       this.ngOnInit();
+      }
      )
 
-     this.reloadPage()
+
+
   }
 
   reloadPage(){

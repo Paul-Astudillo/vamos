@@ -26,9 +26,12 @@ export class CrearclienteComponent {
     console.log(this.cliente)
     this.clienteService.save(this.cliente).subscribe(data =>{
       console.log("resultado WS save", data)
+
+      alert(data.mensaje);
+      this.router.navigate(["pagina/listacliente"])
     })
     this.cliente = new Cliente
-    this.router.navigate(["pagina/listacliente"])
+  
   }
 
 
