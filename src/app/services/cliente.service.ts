@@ -23,7 +23,7 @@ export class ClienteService {
   }
 
   getAll(){
-      return this.http.get<Cliente[]>(urlbase+"clientes")
+      return this.http.get<Cliente[]>(urlbase+"listaCliente")
   }
 
   delete(cliente: Cliente){
